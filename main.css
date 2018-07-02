@@ -1,0 +1,90 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  font-family: "Gloria Hallelujah", "Comic Sans MS", "Textile", cursive;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  max-width: 768px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.time-section.time-section--top {
+  background-color: pink;
+  border-bottom: 1px solid #fff;
+} 
+
+.time-section.time-section--bottom {
+  background-color: #000;
+  border-top: 1px solid #fff;
+}
+
+.time-section .time-section__content {
+  min-width: 120px;
+}
+
+.time-section .time-section__name {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.time-section .time-section__current-time {
+  font-size: 500;
+}
+
+.time-calculator {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.time-calculator__input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+}
+
+.time-calculator__input,
+.time-calculator__input::placeholder {
+  color: #fff;
+  font-family: "Gloria Hallelujah", "Comic Sans MS", "Textile", cursive;
+  font-size: 1rem;
+}
+
+.time-calculator__input.time-calculator__input--top {
+  border-top: 2px solid #fff;
+}
+
+.time-calculator__input.time-calculator__input--bottom {
+  border-bottom: 2px solid #fff;
+}

@@ -4,25 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="node_modules/pickerjs/dist/picker.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
   <title>Hi there!</title>
 </head>
 <body>
-  <main>
-    <section>
-      <strong>Nastya</strong>
-      <div id="nyCurrentTimeNode"></div>
+  <main class="main">
+    <section class="time-section time-section--top">
+      <div class="time-section__content">
+        <strong class="time-section__name">Nastya</strong>
+        <div class="time-section__current-time" id="nyCurrentTimeNode"></div>
+      </div>
     </section>
-    <div>
+    <div class="time-calculator">
       <form action="">
-        <input type="text" placeholder="Nastya" id="nyInput">
-        <br>
-        <input type="text" placeholder="Stas" id="minskInput">
+        <input 
+          class="time-calculator__input time-calculator__input--top"
+          type="text" 
+          placeholder="Nastya`s time ..." 
+          id="nyInput">
+        <input
+          class="time-calculator__input time-calculator__input--bottom" 
+          type="text" 
+          placeholder="Stas` time ..." 
+          id="minskInput">
       </form>
     </div>
-    <section>
-      <strong>Stas</strong>
-      <div id="minskCurrentTimeNode"></div>
+    <section class="time-section time-section--bottom">
+      <div class="time-section__content">
+        <strong class="time-section__name">Stas</strong>
+        <div id="minskCurrentTimeNode"></div>
+      </div>
     </section>
   </main>
   <script src="dayjs.min.js"></script>
